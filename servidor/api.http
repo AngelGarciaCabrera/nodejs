@@ -1,0 +1,14 @@
+GET http://127.0.0.1:5064/pokemon/ditto
+
+### para crear un pokemon
+POST http://127.0.0.1:5064/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal",
+  "moves":[
+    "transform"
+  ]
+}
+
