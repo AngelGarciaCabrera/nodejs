@@ -1,0 +1,38 @@
+
+### recuperar las peliculas
+
+GET http://127.0.0.1:3000/movies
+
+### recuperar una pelicula por id
+
+GET http://127.0.0.1:3000/movies/5ad1a235-0d9c-410a-b32b-220d91689a08
+
+### recuperar una pelicula por genero
+GET http://127.0.0.1:3000/movies?genre=Drama
+
+
+### Post Crear pelicula
+POST http://127.0.0.1:3000/movies
+Content-Type: application/json
+
+{
+    "sql": "SELECT * FROM users",
+    "title": "Flow",
+    "year": 2024,
+    "director": "Gints Zilbalodis",
+    "duration": 152,
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTM5ODBlOTAtYjcwZi00YzkzLWIzODEtMTM2MTZlNDFmMWU2XkEyXkFqcGc@._V1_.jpg",
+    "genre": ["Adventure","Action"]
+}
+
+
+### Actualizar pelicula
+
+PATCH http://127.0.0.1:3000/movies/c2b17aed-729f-4a82-8167-cc1f79e2d4f3
+Content-Type: application/json
+ 
+{
+    "id": 234,
+    "year": 2025
+}
+
